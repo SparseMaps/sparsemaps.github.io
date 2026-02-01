@@ -26,16 +26,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Disable private submodule (_drafts)
+        run: git config submodule._drafts.update none
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: true
+          submodules: false
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
-
-      - name: Disable private submodule (_drafts)
-        run: git config submodule._drafts.update none
 
       - name: Setup Pages
         id: pages
