@@ -59,7 +59,7 @@ TODO:
 * Added mouse click "floating stars" script - through `_layouts/default.html`.
 * Removed most of the post meta data: page description, any dates, author info, read time - through `_layouts/post.html`.
 * Modified basic styling: defined visited link color, text selection color, underline feature (text can be underlined using `{: .underline}`) - through overrides at `assets/css/jekyll-theme-chirpy.scss`.
-* Categories are simplified to single level - for now.
+* Categories are simplified to single level - for now. Categories are removed from `_tabs`, they should not be used at all, ever.
 
 ## Original intro by Chirpy
 
