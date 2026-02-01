@@ -26,8 +26,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Disable private submodule (_drafts)
-        run: git config submodule._drafts.update none
       - name: Checkout
         uses: actions/checkout@v4
         with:
