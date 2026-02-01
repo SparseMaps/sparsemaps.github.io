@@ -1,0 +1,35 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+.content a:visited:not(.img-link) {
+    color: #6cd6af; /* Visited link text color */
+    border-bottom: 2px solid #6cd6af; /* Visited link underline color */
+}
+
+/* Default color for light theme (outside media queries) */
+[data-mode="light"] .content a:visited:not(.img-link) {
+    color: #34b787; /* Visited link text color for light mode */
+    border-bottom: 2px solid #34b787; /* Visited link underline color for light mode */
+}
+
+::selection {
+    background-color: #8e5858; /* Lighter background color */
+}
+
+[data-mode="light"] ::selection {
+    background-color: #cda4a4; /* Softer background color for light mode */
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 1px; /* Optional */
+    // text-decoration-color: #4A90E2; /* Optional */
+}
