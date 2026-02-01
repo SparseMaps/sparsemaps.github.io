@@ -16,7 +16,7 @@ timezone: America/New_York
 
 title: Sparse Maps # the main title
 
-tagline: Field Notes on Perception # it will display as the subtitle
+tagline: Engineering field notes from perception systems # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Journal logs on topics of multi-sensors and algorithms in the context of Autonomous Vehicle stack and applications, i.e., perception (multi-cameras, 3D computer vision, LIDAR, GPS, IMU), Calibration, Sensor Fusion, Kalman Filters, Localization, and beyond - touching hardware and embedded.
